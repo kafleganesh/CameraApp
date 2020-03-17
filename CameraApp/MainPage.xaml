@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:CameraApp" 
+             x:Class="CameraApp.MainPage">
+    <StackLayout 
+            BackgroundColor="Gray">
+    <StackLayout 
+            VerticalOptions="CenterAndExpand"
+            >
+        <Button
+            Text="Take photo"
+            BackgroundColor="Teal"
+            TextColor="White"
+                Clicked="loadCamera"
+        />
+        <Image
+            x:Name="MyImage"
+            HeightRequest="300"
+            WidthRequest="300"/>
+        <Button
+            Text="Import photo"
+            BackgroundColor="Teal"
+                TextColor="White"
+        />
+        <Button
+            Text="Cancel"
+            BackgroundColor="Teal"
+                TextColor="White"
+            Clicked="Cancel_Clicked"
+        />
+            <ImageButton x:Name="image"/>
+            </StackLayout>
+    </StackLayout>
+</ContentPage>
